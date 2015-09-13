@@ -138,7 +138,7 @@
                                      ->whereNull( 'assets.deleted_at' )
                                      ->get();
             $asset_array         = json_decode( json_encode( $asset ), true );
-            $asset_element[ '' ] = 'Please select an asset';
+            $asset_element[ '' ] = Lang::get('general.select_asset');
             // Build a list out of the data results
             for ($x = 0; $x < count( $asset_array ); $x++) {
 
@@ -287,7 +287,7 @@
                                      ->whereNull( 'assets.deleted_at' )
                                      ->get();
             $asset_array         = json_decode( json_encode( $asset ), true );
-            $asset_element[ '' ] = 'Please select an asset';
+            $asset_element[ '' ] = Lang::get('general.select_asset');
             // Build a list out of the data results
             for ($x = 0; $x < count( $asset_array ); $x++) {
 
