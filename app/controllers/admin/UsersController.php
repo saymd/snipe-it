@@ -267,7 +267,7 @@ class UsersController extends AdminController {
             $this->encodeAllPermissions($permissions);
 
             $location_list = array('' => '') + Location::lists('name', 'id');
-            $manager_list = array('' => 'Select a User') + DB::table('users')
+            $manager_list = array('' => Lang::get('general.select_user')) + DB::table('users')
                             ->select(DB::raw('concat(last_name,", ",first_name," (",email,")") as full_name, id'))
                             ->whereNull('deleted_at')
                             ->where('id', '!=', $id)
@@ -689,7 +689,7 @@ class UsersController extends AdminController {
             $this->encodeAllPermissions($permissions);
 
             $location_list = array('' => '') + Location::lists('name', 'id');
-            $manager_list = array('' => 'Select a User') + DB::table('users')
+            $manager_list = array('' => Lang::get('general.select_user')) + DB::table('users')
                             ->select(DB::raw('concat(last_name,", ",first_name," (",email,")") as full_name, id'))
                             ->whereNull('deleted_at')
                             ->where('id', '!=', $id)
