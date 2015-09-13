@@ -330,6 +330,7 @@ Form::macro('currencies', function ($name = "currency", $selected = null, $class
     '₯'=>'₯',
     '₱'=>'₱',
     '₹'=>'₹',
+	'￥'=>'￥',
     );
 
     $select = '<select name="'.$name.'" class="'.$class.'">';
