@@ -101,7 +101,7 @@
 		                                        <td><a href="{{ route('view/hardware', $asset->id) }}">{{{ $asset->asset_tag }}}</a></td>
 		                                        <td><a href="{{ route('view/hardware', $asset->id) }}">{{{ $asset->name }}}</a></td>
 
-		                                        <td class="hidden-print"> <a href="{{ route('checkin/hardware', array('assetId'=> $asset->id, 'backto'=>'user')) }}" class="btn-flat info">Checkin</a></td>
+		                                        <td class="hidden-print"> <a href="{{ route('checkin/hardware', array('assetId'=> $asset->id, 'backto'=>'user')) }}" class="btn-flat info">@lang('general.checkin')</a></td>
 		                                    </tr>
 		                                    @endforeach
 		                                </tbody>
@@ -136,7 +136,7 @@
                                     <tr>
                                         <td><a href="{{ route('view/license', $license->id) }}">{{{ $license->name }}}</a></td>
                                         <td><a href="{{ route('view/license', $license->id) }}">{{{ mb_strimwidth($license->serial, 0, 50, "...") }}}</a></td>
-                                        <td class="hidden-print"> <a href="{{ route('checkin/license', array('licenseseat_id'=> $license->pivot->id, 'backto'=>'user')) }}" class="btn-flat info">Checkin</a>
+                                        <td class="hidden-print"> <a href="{{ route('checkin/license', array('licenseseat_id'=> $license->pivot->id, 'backto'=>'user')) }}" class="btn-flat info">@lang('general.checkin')</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -173,7 +173,7 @@
                                     @foreach ($user->accessories as $accessory)
                                     <tr>
                                         <td><a href="{{ route('view/accessory', $accessory->id) }}">{{{ $accessory->name }}}</a></td>
-                                        <td class="hidden-print"> <a href="{{ route('checkin/accessory', array('accessory_id'=> $accessory->pivot->id, 'backto'=>'user')) }}" class="btn-flat info">Checkin</a>
+                                        <td class="hidden-print"> <a href="{{ route('checkin/accessory', array('accessory_id'=> $accessory->pivot->id, 'backto'=>'user')) }}" class="btn-flat info">@lang('general.checkin')</a>
                                         </td>
                                     </tr>
                                     @endforeach

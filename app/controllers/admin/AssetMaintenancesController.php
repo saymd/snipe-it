@@ -151,7 +151,7 @@
                     $asset_array[ $x ][ 'asset_tag' ] . ' - ' . $asset_array[ $x ][ 'name' ] . $full_name;
             }
             // Get Supplier List
-            $supplier_list = [ '' => 'Select Supplier' ] + Supplier::orderBy( 'name', 'asc' )
+            $supplier_list = [ '' => Lang::get( 'general.select_supplier' ) ] + Supplier::orderBy( 'name', 'asc' )
                                                                    ->lists( 'name', 'id' );
 
             // Render the view
@@ -300,7 +300,7 @@
                     $asset_array[ $x ][ 'asset_tag' ] . ' - ' . $asset_array[ $x ][ 'name' ] . $full_name;
             }
             // Get Supplier List
-            $supplier_list = [ '' => 'Select Supplier' ] + Supplier::orderBy( 'name', 'asc' )
+            $supplier_list = [ '' => Lang::get( 'general.select_supplier' ) ] + Supplier::orderBy( 'name', 'asc' )
                                                                    ->lists( 'name', 'id' );
 
             // Render the view

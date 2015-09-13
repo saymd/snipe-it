@@ -9,7 +9,7 @@
 @section('content')
     <div class="row header">
         <div class="col-md-12">
-            <a href="{{ route('create/asset_maintenances') }}" class="btn btn-success pull-right"><i class="fa fa-plus icon-white"></i> Create New</a>
+            <a href="{{ route('create/asset_maintenances') }}" class="btn btn-success pull-right"><i class="fa fa-plus icon-white"></i> @lang('general.create')</a>
             <h3>@lang('admin/asset_maintenances/general.asset_maintenances')</h3>
         </div>
     </div>
