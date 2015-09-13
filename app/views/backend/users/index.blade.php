@@ -60,6 +60,7 @@
                 'loadingRecords' => Lang::get('general.loading'),
                 'zeroRecords' => Lang::get('general.no_results'),
                 'info' => Lang::get('general.pagination_info'),
+                'infoEmpty' => Lang::get('general.pagination_info_empty'),
                 'processing' => '<i class="fa fa-spinner fa-spin"></i> '.Lang::get('general.processing'),
                 'paginate'=> array(
                     'first'=>Lang::get('general.first'),

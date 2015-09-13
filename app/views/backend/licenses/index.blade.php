@@ -33,6 +33,7 @@
 			            	'loadingRecords' => Lang::get('general.loading'),
 			            	'zeroRecords' => Lang::get('general.no_results'),
 			            	'info' => Lang::get('general.pagination_info'),
+			            	'infoEmpty' => Lang::get('general.pagination_info_empty'),
 			            	'processing' => Lang::get('general.processing'),
 			            	'paginate'=> array(
 			            		'first'=>Lang::get('general.first'),
