@@ -125,7 +125,7 @@
 
             // Prepare Asset Maintenance Type List
             $assetMaintenanceType = [
-                                        '' => 'Select an asset maintenance type',
+                                        '' => Lang::get('general.select_maintenance'),
                                     ] + AssetMaintenance::getImprovementOptions();
             // Mark the selected asset, if it came in
             $selectedAsset = $assetId;
