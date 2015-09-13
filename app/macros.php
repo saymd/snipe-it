@@ -11,7 +11,7 @@
 Form::macro('countries', function ($name = "country", $selected = null, $class = null, $id = null) {
 
     $countries = array(
-    ''=>"Select a Country",
+    ''=>Lang::get('general.select_country'),
     'AC'=>'Ascension Island',
     'AD'=>'Andorra',
     'AE'=>'United Arab Emirates',
