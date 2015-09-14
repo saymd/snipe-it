@@ -3,8 +3,8 @@
     <div class="alert alert-danger">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <i class="fa fa-exclamation-circle"></i>
-        <strong>Error: </strong>
-         Please check the form below for errors
+        <strong>@lang('notification.error'): </strong>
+         @lang('notification.check_errors')
     </div>
 </div>
 
@@ -15,7 +15,7 @@
     <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <i class="fa fa-check"></i>
-        <strong>Success: </strong>
+        <strong>@lang('notification.success'): </strong>
         {{ $message }}
     </div>
 </div>
@@ -26,7 +26,7 @@
     <div class="alert alert alert-danger">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <i class="fa fa-exclamation-circle"></i>
-        <strong>Error: </strong>
+        <strong>@lang('notification.error'): </strong>
         {{ $message }}
     </div>
 </div>
@@ -37,7 +37,7 @@
     <div class="alert alert-warning">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <i class="fa fa-warning"></i>
-        <strong>Warning: </strong>
+        <strong>@lang('notification.warning'): </strong>
         {{ $message }}
     </div>
 </div>
@@ -48,7 +48,7 @@
     <div class="alert alert-info">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <i class="fa fa-info-circle"></i>
-        <strong>Info: </strong>
+        <strong>@lang('notification.info'): </strong>
         {{ $message }}
     </div>
 </div>
