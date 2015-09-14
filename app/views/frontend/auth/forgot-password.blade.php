@@ -2,14 +2,14 @@
 
 {{-- Page title --}}
 @section('title')
-Forgot Password ::
+@lang('auth/general.forgot_password') ::
 @parent
 @stop
 
 {{-- Page content --}}
 @section('content')
 <div class="page-header">
-    <h3>Forgot Password</h3>
+    <h3>@lang('auth/general.forgot_password')</h3>
 </div>
 <div class="row form-wrapper">
 <form method="post" action="" class="form-horizontal">

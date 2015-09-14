@@ -2,14 +2,14 @@
 
 {{-- Page title --}}
 @section('title')
-Forgot Password ::
+@lang('auth/general.forgot_password') ::
 @parent
 @stop
 
 {{-- Page content --}}
 @section('content')
 <div class="page-header">
-    <h3>Forgot Password</h3>
+    <h3>@lang('auth/general.forgot_password')</h3>
 </div>
 <form method="post" action="" class="form-horizontal">
     <!-- CSRF Token -->
@@ -17,7 +17,7 @@ Forgot Password ::
 
     <!-- New Password -->
 	<div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
-        <label for="password" class="col-md-3 control-label">New Password
+        <label for="password" class="col-md-3 control-label">@lang('auth/general.new_password')
          <i class='fa fa-asterisk'></i>
          </label>
         <div class="col-md-5">
@@ -28,7 +28,7 @@ Forgot Password ::
 
     <!-- Password Confirm -->
     <div class="form-group {{ $errors->has('password_confirm') ? ' has-error' : '' }}">
-        <label for="password_confirm" class="col-md-3 control-label">Password Confirmation
+        <label for="password_confirm" class="col-md-3 control-label">@lang('auth/general.password_confirm')
          <i class='fa fa-asterisk'></i>
          </label>
         <div class="col-md-5">
