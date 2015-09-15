@@ -60,7 +60,7 @@ class ChangePasswordController extends AuthorizedController
         // Check the user current password
         if ( ! $user->checkPassword(Input::get('old_password'))) {
             // Set the error message
-            $this->messageBag->add('old_password', 'Your current password is incorrect.');
+            $this->messageBag->add('old_password', Lang::get('admin/users/message.user_password_incorrect'));
 
             // Redirect to the change password page
             return Redirect::route('change-password')->withErrors($this->messageBag);
@@ -72,7 +72,7 @@ class ChangePasswordController extends AuthorizedController
         }
 
         // Redirect to the change-password page
-        return Redirect::route('change-password')->with('success', 'Password successfully updated');
+        return Redirect::route('change-password')->with('success', Lang::get('admin/users/message.user_password_updated'));
     }
 
 }

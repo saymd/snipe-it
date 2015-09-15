@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Change your Password
+@lang('general.changepassword')
 @stop
 
 {{-- Account page content --}}
@@ -21,7 +21,7 @@ Change your Password
 
     <!-- Old Password -->
     <div class="form-group {{ $errors->has('old_password') ? ' has-error' : '' }}">
-        <label for="old_password" class="col-md-2 control-label">Old Password
+        <label for="old_password" class="col-md-2 control-label">@lang('auth/general.old_password')
         <i class='fa fa-asterisk'></i>
         </label>
         <div class="col-md-5">
@@ -31,7 +31,7 @@ Change your Password
     </div>
 
     <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
-        <label for="password" class="col-md-2 control-label">New Password
+        <label for="password" class="col-md-2 control-label">@lang('auth/general.new_password')
         <i class='fa fa-asterisk'></i></label>
         <div class="col-md-5">
             <input class="form-control" type="password" name="password" id="password" {{ (Config::get('app.lock_passwords') ? ' disabled' : '') }}>
@@ -41,7 +41,7 @@ Change your Password
 
 
     <div class="form-group {{ $errors->has('password_confirm') ? ' has-error' : '' }}">
-        <label for="password_confirm" class="col-md-2 control-label">New Password
+        <label for="password_confirm" class="col-md-2 control-label">@lang('auth/general.password_confirm')
         <i class='fa fa-asterisk'></i>
         </label>
         <div class="col-md-5">
