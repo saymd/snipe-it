@@ -3,6 +3,7 @@
 use AuthorizedController;
 use Image;
 use Input;
+use Lang;
 use Redirect;
 use Sentry;
 use Validator;
@@ -23,7 +24,7 @@ class ProfileController extends AuthorizedController
 
         // Show the page
 
-        $location_list = array('' => 'Select One') + Location::lists('name', 'id');
+        $location_list = array('' => Lang::get('general.select_location')) + Location::lists('name', 'id');
 
         // Show the page
         return View::make('frontend/account/profile', compact('user'))->with('location_list',$location_list);
@@ -79,7 +80,7 @@ class ProfileController extends AuthorizedController
         $user->save();
 
         // Redirect to the settings page
-        return Redirect::route('profile')->with('success', 'Account successfully updated');
+        return Redirect::route('profile')->with('success', Lang::get('auth/message.account_updated'));
     }
 
 }

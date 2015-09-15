@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Your Profile
+@lang('general.profile')
 @stop
 
 {{-- Account page content --}}
